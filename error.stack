@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\repositories.py", line 1462, in track_results
+    yield new_branch_name
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\wrapper.py", line 42, in wrapper
+    results = func(project_repo, options)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 209, in process_example
+    create_output(
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 153, in create_output
+    run_func_over_args_list(
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 83, in run_func_over_args_list
+    return backend.run(func, args_list)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 38, in run
+    results.append(func(*args))
+                   ^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 181, in convert_python_to_ipynb
+    results = run_command(
+              ^^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 99, in run_command
+    return subprocess.run(command, shell=True, check=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'jupytext --output "C:/Users/katha/Dokumente/cadet_case_studies/RDM-Example-SMB/output/src/SMB_case_3.ipynb" --execute "C:/Users/katha/Dokumente/cadet_case_studies/RDM-Example-SMB/output/src/SMB_case_3.py"' returned non-zero exit status 1.
+
