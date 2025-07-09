@@ -24,3 +24,22 @@ Traceback (most recent call last):
     raise CalledProcessError(retcode, process.args,
 subprocess.CalledProcessError: Command 'jupytext --output "C:/Users/katha/Dokumente/cadet_case_studies/RDM-Example-SMB/output/src/SMB_case_3.ipynb" --execute "C:/Users/katha/Dokumente/cadet_case_studies/RDM-Example-SMB/output/src/SMB_case_3.py"' returned non-zero exit status 1.
 
+Traceback (most recent call last):
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\repositories.py", line 1462, in track_results
+    yield new_branch_name
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\wrapper.py", line 42, in wrapper
+    results = func(project_repo, options)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 209, in process_example
+    create_output(
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\site-packages\cadetrdm\tools\process_example.py", line 135, in create_output
+    shutil.rmtree(output_path)
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\shutil.py", line 787, in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\shutil.py", line 638, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "C:\Users\katha\miniforge3\envs\rdm-example\Lib\shutil.py", line 636, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 32] Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird: 'C:\\Users\\katha\\Dokumente_work\\cadet_case_studies\\RDM-Example-SMB\\output\\src'
+
