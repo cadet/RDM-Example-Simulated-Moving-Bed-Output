@@ -1,0 +1,14 @@
+{
+  "output_repo_commit_message": "Run large optimizations; ",
+  "output_repo_branch": "2026-11-26_12-35-41_main_2d81a0e",
+  "output_repo_commit_hash": "48a12f87db27b321a8705598e95dab5abfcf69db",
+  "project_repo_branch": "main",
+  "project_repo_commit_hash": "2d81a0ee399b3bdefc0b3cd7baa6f7e954b6e1b4",
+  "project_repo_directory_name": "RDM-Example-Simulated-Moving-Bed",
+  "project_repo_remotes": [
+    "git@github.com:cadet/RDM-Example-Simulated-Moving-Bed.git"
+  ],
+  "python_sys_args": "['main.py']",
+  "tags": "",
+  "options_hash": "f5ywb884bh4krchb69pytjjbzrranvww"
+}
